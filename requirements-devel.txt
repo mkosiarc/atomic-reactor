@@ -92,9 +92,12 @@ opentelemetry-api==1.19.0
     #   opentelemetry-instrumentation
     #   opentelemetry-instrumentation-requests
     #   opentelemetry-sdk
+    #   osbs-client
     #   otel-extensions
 opentelemetry-exporter-otlp==1.19.0
-    # via -r otel-requirements.in
+    # via
+    #   -r otel-requirements.in
+    #   osbs-client
 opentelemetry-exporter-otlp-proto-common==1.19.0
     # via
     #   opentelemetry-exporter-otlp-proto-grpc
@@ -106,7 +109,9 @@ opentelemetry-exporter-otlp-proto-http==1.19.0
 opentelemetry-instrumentation==0.40b0
     # via opentelemetry-instrumentation-requests
 opentelemetry-instrumentation-requests==0.40b0
-    # via -r otel-requirements.in
+    # via
+    #   -r otel-requirements.in
+    #   osbs-client
 opentelemetry-proto==1.19.0
     # via
     #   opentelemetry-exporter-otlp-proto-common
@@ -117,6 +122,7 @@ opentelemetry-sdk==1.19.0
     #   -r otel-requirements.in
     #   opentelemetry-exporter-otlp-proto-grpc
     #   opentelemetry-exporter-otlp-proto-http
+    #   osbs-client
     #   otel-extensions
 opentelemetry-semantic-conventions==0.40b0
     # via
@@ -124,10 +130,12 @@ opentelemetry-semantic-conventions==0.40b0
     #   opentelemetry-sdk
 opentelemetry-util-http==0.40b0
     # via opentelemetry-instrumentation-requests
-osbs-client @ git+https://github.com/containerbuildsystem/osbs-client@2bd03f4e0e5edc474b6236c5c128620d988f79a3
+osbs-client @ git+https://github.com/mkosiarc/osbs-client@85f1df12210a07d689cad7e24c96e0d217d3e8a2
     # via -r requirements.in
 otel-extensions==0.2.5
-    # via -r otel-requirements.in
+    # via
+    #   -r otel-requirements.in
+    #   osbs-client
 packaging==23.1
     # via
     #   hatchling
